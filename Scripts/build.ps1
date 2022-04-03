@@ -3,3 +3,4 @@ DISM /Mount-image /imagefile: /MountDir:./mnt/
 Mount-WindowsImage -ImagePath .\media\sources\boot.wim -Path .\mount\ -Index 1
 #copy all folders from ./cache/donloads to ./mount/Program Files
 Copy-Item -r ./cache/downloads/* "./mount/Program Files"
+Copy-item .\startnet.cmd "./mount/Windows/System32/startnet.cmd"
